@@ -29,6 +29,7 @@ const objectJokes = [
     'Aus welcher Stadt kommen die meisten Audiokabel? - Aus Auxburg!'
 ];
 
+// Select 2 different random jokes and return them
 const showRandomJokes = () => {
     const animalJoke = animalJokes[Math.floor(Math.random() * animalJokes.length)];
     const humanJoke = humanJokes[Math.floor(Math.random() * humanJokes.length)];
@@ -37,4 +38,5 @@ const showRandomJokes = () => {
     return `## GERMAN JOKE GENERATOR ##\nAnimal: ${animalJoke}\nHuman: ${humanJoke}\nObject: ${objectJoke}`;
 };
 
+// Print from shoRandomJokes() returned jokes
 console.log(showRandomJokes());
